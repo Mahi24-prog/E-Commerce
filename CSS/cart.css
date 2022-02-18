@@ -38,28 +38,13 @@
     line-height: 3.5rem;
 }
 
-.cart-product-card .card-details .title{
-
-}
-
-.cart-product-card .card-details .price{
- 
-}
-
 .cart-product-card .card-details .price strike{
     color: var(--dark-gray);
     margin-left: 2rem;
 }
 
-.cart-product-card .card-details .offers{
-
-}
-
 .cart-product-card .card-details .offers span{
     color: var(--dark-gray);
-}
-
-.cart-product-card .card-details .quantity{
 }
 
 .cart-product-card .card-details .quantity .value{
