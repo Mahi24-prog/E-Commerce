@@ -17,7 +17,182 @@
 </head>
 
 <body>
-    <h1>Product Page</h1>
+
+    <!-- Navbar  -->
+    <nav id="home-navbar" class="flex-ali-cen flex-wrap">
+        <div class="home-nav-left">
+            <h1 class="brand-name lg-h">Apani Dukan</h1>
+        </div>
+        <div class="home-nav-mid">
+            <div class="nav-mid-search">
+                <input type="text md-text" placeholder="Search..">
+            </div>
+        </div>
+        <div class="home-nav-right flex-all-cen">
+            <div class="badge nav-right-ele">
+                <i class="fas fa-heart lg-text"></i>
+                <div class="number sm-text">4</div>
+            </div>
+            <div class="badge nav-right-ele">
+                <i class="fas fa-shopping-cart lg-text"></i>
+                <div class="number sm-text">4</div>
+            </div>
+            <button class="btn-outline-primary btn nav-right-ele" onclick="location.href='login.html'">Login</button>
+            <button class="btn-primary btn nav-right-ele" onclick="location.href='signup.html'">Sign up</button>
+        </div>
+    </nav>
+
+    <!-- Products  -->
+    <div id="product-container" class="d-flex">
+        <div class="filters">
+            <div class="filter-header d-flex">
+                <h2 class="md-text">Filters</h3>
+                <h3 class="md-text">Clear</h3>
+            </div>
+            <div class="price filter-item">
+                <h3 class="sm-text filter-title">Price</h3>
+                <div class="price-label d-flex">
+                    <span id="start">200</span>
+                    <span id="mid">2500</span>
+                    <span id="end">5000</span>
+                </div>
+                <input class="price-slider" type="range" min="200" max="5000" value="2500">
+            </div>
+            <div class="category filter-item">
+                <h3 class="sm-text filter-title">Category</h3>
+                <div class="category-item">
+                    <input type="checkbox" name="sneakers" value="sneakers" checked>
+                    <label for="sneakers" class="sm-text">Sneakers</label>
+                </div>
+                <div class="category-item">
+                    <input type="checkbox" name="casual-shoes" value="casual-shoes">
+                    <label for="casual-shoes" class="sm-text">Casual Shoes</label>
+                </div>
+                <div class="category-item">
+                    <input type="checkbox" name="sport-shoes" value="sport-shoes">
+                    <label for="sport-shoes" class="sm-text">Sport Shoes</label>
+                </div>
+                <div class="category-item">
+                    <input type="checkbox" name="Formal-shoes" value="Formal-shoes">
+                    <label for="formal-shoes" class="sm-text">Formal Shoes</label>
+                </div>
+            </div>
+            <div class="filter-rating filter-item">
+                <h3 class="sm-text filter-title">Rating</h3>
+                <div class="filter-rating-item">
+                    <input type="radio" id="4star&above" name="filter-rating" value="4star&above" checked>
+                     <label for="4star&above" class="sm-text">4 Star and above</label>
+                </div>
+                <div class="filter-rating-item"><input type="radio" id="3star&above" name="filter-rating" value="3star&above">
+                     <label for="3star&above" class="sm-text">3 Star and above</label></div>
+                <div class="filter-rating-item"><input type="radio" id="2star&above" name="filter-rating" value="2star&above">
+                     <label for="2star&above" class="sm-text">2 Star and above</label></div>
+                <div class="filter-rating-item"><input type="radio" id="1star&above" name="filter-rating" value="1star&above">
+                     <label for="1star&above" class="sm-text">1 Star and above</label></div>
+
+            </div>
+            <div class="sortby filter-item">
+                <h3 class="sm-text filter-title">Sort By</h3>
+                <div class="sortby-item">
+                    <input type="radio" id="price-lowtohigh" name="filter-sortby" value="price-lowtohigh" checked>
+                     <label for="price-lowtohigh" class="sm-text">Price - Low to High</label>
+                </div>
+                <div class="sortby-item"><input type="radio" id="price-hightolow" name="filter-sortby" value="price-hightolow">
+                     <label for="price-hightolow" class="sm-text">Price - High to Low</label></div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="products-card-wrapper d-flex flex-wrap">
+                <div class="card-with-badge sm-card card-product">
+                    <i class="fa fa-heart-o fa-1x like-filled-icon-btn card-icon" aria-hidden="true"></i>
+                    <img class="card-img" src="/images/product1.png" alt="Image">
+                    <div class="card-body">
+                        <h2 class="card-title xsm-h">Crew STREET</h2>
+                        <p class="card-subtitle sm-text gray-text">Men Fluorescent Green Woven Design Sneakers</p>
+                    </div>
+                    <div class="card-product-price">
+                        <h2 class="product-price">RS.999</h2>
+                        <div class="product-offer sm-text"><strike>Rs.1999</strike> <span>(55% OFF)</span>
+                            <span class="rating">4.5<i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-footer flex-col">
+                        <button class="btn-primary btn" onclick="location.href='cart.html'">Add to Cart</button>
+                        <button class="btn-secondary btn" onclick="location.href='wishlist.html'">Add to Wishlist</button>
+                    </div>
+                </div>
+                <div class="card-with-badge sm-card card-product">
+                    <i class="fa fa-heart-o fa-1x like-filled-icon-btn card-icon" aria-hidden="true"></i>
+                    <img class="card-img" src="/images/product1.png" alt="Image">
+                    <div class="card-body">
+                        <h2 class="card-title xsm-h">Crew STREET</h2>
+                        <p class="card-subtitle sm-text gray-text">Men Fluorescent Green Woven Design Sneakers</p>
+                    </div>
+                    <div class="card-product-price">
+                        <h2 class="product-price">RS.999</h2>
+                        <div class="product-offer sm-text"><strike>Rs.1999</strike> <span>(55% OFF)</span>
+                            <span class="rating">4.5<i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-footer flex-col">
+                        <button class="btn-primary btn" onclick="location.href='cart.html'">Add to Cart</button>
+                        <button class="btn-secondary btn" onclick="location.href='wishlist.html'">Add to Wishlist</button>
+                    </div>
+                </div>
+                <div class="card-with-badge sm-card card-product">
+                    <i class="fa fa-heart-o fa-1x like-filled-icon-btn card-icon" aria-hidden="true"></i>
+                    <img class="card-img" src="/images/product1.png" alt="Image">
+                    <div class="card-body">
+                        <h2 class="card-title xsm-h">Crew STREET</h2>
+                        <p class="card-subtitle sm-text gray-text">Men Fluorescent Green Woven Design Sneakers</p>
+                    </div>
+                    <div class="card-product-price">
+                        <h2 class="product-price">RS.999</h2>
+                        <div class="product-offer sm-text"><strike>Rs.1999</strike> <span>(55% OFF)</span>
+                            <span class="rating">4.5<i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-footer flex-col">
+                        <button class="btn-primary btn" onclick="location.href='cart.html'">Add to Cart</button>
+                        <button class="btn-secondary btn" onclick="location.href='wishlist.html'">Add to Wishlist</button>
+                    </div>
+                </div>
+                <div class="card-with-badge sm-card card-product">
+                    <i class="fa fa-heart-o fa-1x like-filled-icon-btn card-icon" aria-hidden="true"></i>
+                    <img class="card-img" src="/images/product1.png" alt="Image">
+                    <div class="card-body">
+                        <h2 class="card-title xsm-h">Crew STREET</h2>
+                        <p class="card-subtitle sm-text gray-text">Men Fluorescent Green Woven Design Sneakers</p>
+                    </div>
+                    <div class="card-product-price">
+                        <h2 class="product-price">RS.999</h2>
+                        <div class="product-offer sm-text"><strike>Rs.1999</strike> <span>(55% OFF)</span>
+                            <span class="rating">4.5<i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <div class="card-footer flex-col">
+                        <button class="btn-primary btn" onclick="location.href='cart.html'">Add to Cart</button>
+                        <button class="btn-secondary btn" onclick="location.href='wishlist.html'">Add to Wishlist</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+    </div>
+
+    <!-- Footer  -->
+    <div id="footer">
+        <div class="footer-icons flex-wrap flex-all-cen">
+            <a href="https://github.com/Mahi24-prog/" target="_blank"><i class="fa fa-github md-text"></i></a>
+            <a href="https://www.linkedin.com/in/mahendra-pawar-3513b3170/" target="_blank"><i class="fa fa-linkedin md-text"></i></i></a>
+            <a href="https://www.instagram.com/mahi__24__/" target="_blank"><i class="fa fa-instagram md-text"></i></i></a>
+        </div>
+        <div class="content">
+            <h3 class="text-center">
+                <h3 class="md-text text-center">&copy 2022 Copyright : Created by Mahendra</h3>
+            </h3>
+        </div>
+    </div>
 </body>
 
 </html>
