@@ -11,5 +11,50 @@
 @import url("./CSS/wishlist.css");
 @import url("./CSS/footer.css");
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-dark-color: #db5660;
+    --primary-light-color: #e7c0c4;
+    --secondary-color:#1f2937;
+    --black : #222222;
+    --white:white;
+    --dark-gray:#7f8c8d;
+    --light-gray:#E5E5E5;
+}
 
 
+
+
+/* Media Query for Responsible text size and screen  */
+html{
+    font-size: 62.5%;  
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 58%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media(max-width:640px){
+    html{
+        font-size: 38%;
+    }
+}
+
+@media(max-width:480px){
+    #featured-categories .categories-wrapper .category{
+        width: 50rem;
+    }
+}
