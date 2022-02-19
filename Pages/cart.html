@@ -17,7 +17,125 @@
     </head>
 
 <body>
-    <h1>Cart Page</h1>
+
+    <!-- Navbar  -->
+    <nav id="home-navbar" class="flex-ali-cen flex-wrap">
+        <div class="home-nav-left">
+            <h1 class="brand-name lg-h">Apani Dukan</h1>
+        </div>
+        <div class="home-nav-mid">
+            <div class="nav-mid-search">
+                <input type="text md-text" placeholder="Search..">
+            </div>
+        </div>
+        <div class="home-nav-right flex-all-cen">
+            <div class="badge nav-right-ele">
+                <i class="fas fa-heart lg-text"></i>
+                <div class="number sm-text">4</div>
+            </div>
+            <div class="badge nav-right-ele">
+                <i class="fas fa-shopping-cart lg-text"></i>
+                <div class="number sm-text">4</div>
+            </div>
+            <button class="btn-outline-primary btn nav-right-ele" onclick="location.href='login.html'">Login</button>
+            <button class="btn-primary btn nav-right-ele" onclick="location.href='signup.html'">Sign up</button>
+        </div>
+    </nav>
+
+    <!-- Cart  -->
+    <h2 class="md-h text-center">My Cart(2)</h2>
+   <div id="cart-container" class="d-flex flex-wrap">
+       <div class="cart-products">
+           <div class="cart-product-card flex-all-cen">
+               <div class="card-img">
+                   <img src="/images/cart-product1.png" alt="Cart-img">
+               </div>
+               <div class="card-details">
+                   <div class="title md-h">Addidas Shoes</div>
+                   <div class="price">
+                       <span class="lg-text">$299</span>
+                       <strike class="md-text">$399</strike>
+                   </div>
+                   <div class="offers">
+                       <span class="md-text">50% OFF</span>
+                   </div>
+                   <div class="quantity">
+                       <span class="sm-text title">Quantity :</span>
+                       <span><i class="fa fa-plus-circle sm-text icon"></i></span>
+                       <span class="sm-text value">1</span>
+                       <span><i class="fa fa-minus-circle sm-text icon"></i></span>
+                   </div>
+                   <div class="buttons">
+                       <button class="btn-primary btn" onclick="location.href='wishlist.html'">Move to Wishlist</button>
+                       <button class="btn-outline-secondary btn">Remove From Cart</button>
+                   </div>
+               </div>
+           </div>
+           <div class="cart-product-card flex-all-cen">
+            <div class="card-img">
+                <img src="/images/cart-product1.png" alt="Cart-img">
+            </div>
+            <div class="card-details">
+                <div class="title md-h">Addidas Shoes</div>
+                <div class="price">
+                    <span class="lg-text">$299</span>
+                    <strike class="md-text">$399</strike>
+                </div>
+                <div class="offers">
+                    <span class="md-text">50% OFF</span>
+                </div>
+                <div class="quantity">
+                    <span class="sm-text title">Quantity :</span>
+                    <span><i class="fa fa-plus-circle sm-text icon"></i></span>
+                    <span class="sm-text value">1</span>
+                    <span><i class="fa fa-minus-circle sm-text icon"></i></span>
+                </div>
+                <div class="buttons">
+                    <button class="btn-primary btn" onclick="location.href='wishlist.html'">Move to Wishlist</button>
+                       <button class="btn-outline-secondary btn">Remove From Cart</button>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="cart-price-details">
+           <div class="title md-h">Price Details</div>
+           <hr class="line">
+           <div class="price space-bet">
+               <span class="sm-text">Price (2 items)</span>
+               <span class="sm-text">$299</span>
+           </div>
+           <div class="discount space-bet">
+                <span class="sm-text">Discount</span>
+                <span class="sm-text">-$99</span>
+            </div>
+            <div class="delivery-charg space-bet">
+                <span class="sm-text">Delivery Charg</span>
+                <span class="sm-text">$20</span>
+            </div>
+            <hr class="line">
+            <div class="total-amount space-bet">
+                <span class="md-text">Total Amount</span>
+                <span class="md-text">$220</span>
+            </div>
+            <hr class="line">
+            <h3 class="sm-text">You will save $199 on this Order</h3>
+            <button class="btn-primary btn">Place Order</button>
+       </div>
+   </div>
+
+    <!-- Footer  -->
+    <div id="footer">
+        <div class="footer-icons flex-wrap flex-all-cen">
+            <a href="https://github.com/Mahi24-prog/" target="_blank"><i class="fa fa-github md-text"></i></a>
+            <a href="https://www.linkedin.com/in/mahendra-pawar-3513b3170/" target="_blank"><i class="fa fa-linkedin md-text"></i></i></a>
+            <a href="https://www.instagram.com/mahi__24__/" target="_blank"><i class="fa fa-instagram md-text"></i></i></a>
+        </div>
+        <div class="content">
+            <h3 class="text-center">
+                <h3 class="md-text text-center">&copy 2022 Copyright : Created by Mahendra</h3>
+            </h3>
+        </div>
+    </div>
 </body>
 
 </html>
