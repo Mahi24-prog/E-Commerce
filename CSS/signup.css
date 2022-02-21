@@ -1,5 +1,6 @@
 #signup-container{
-    width: 45rem;
+    width: 30%;
+    min-width: 35rem;
     margin: 10% auto;
     padding: 2rem;
     box-shadow: 

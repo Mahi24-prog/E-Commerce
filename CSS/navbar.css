@@ -16,7 +16,8 @@
 
 .home-nav-mid{
     flex: 1;
-    min-width: 10rem;
+    min-width: 18rem;
+    margin: 0 1rem;
 }
 
 .nav-mid-search input{
