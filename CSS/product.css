@@ -1,9 +1,13 @@
 #product-container{
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+    max-width: 90%;
     height: fit-content;
 }
 
 .filters{
     background-color: var(--secondary-color);
+    min-width: 25rem;
 }
 
 .filters input{
@@ -63,7 +67,7 @@
 
 /* Products  */
 .products{
-    flex: 1.7;
+    flex-grow: 1;
 }
 
 .products-card-wrapper{
