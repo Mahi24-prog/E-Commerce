@@ -81,3 +81,24 @@
     padding: 2rem;
     flex: 1;
 }
+
+@media(max-width:768px){
+    .new-arrival-card{
+        min-width: 90%;
+    }
+}
+
+@media(max-width:640px){
+    .new-arrival-card{
+        min-width: 90%;
+    }
+}
+
+@media(max-width:480px){
+    #featured-categories .categories-wrapper .category{
+        width: 50rem;
+    }
+    .new-arrival-card{
+        min-width: 90%;
+    }
+}
